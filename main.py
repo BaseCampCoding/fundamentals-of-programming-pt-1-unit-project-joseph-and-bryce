@@ -49,3 +49,22 @@ def minecraft_story() -> str:
 
 
 minecraft_story()
+
+
+
+
+
+
+
+
+def pirate_story() -> str:
+  print(yellow("\nTreasue Hunt\n "))
+  pirate_name = input(red("What is your Captain's name? "))
+  ship_name = input(red("What is the name of your ship? "))
+  treasure = input(red("What is the treasure you are seeking? "))
+  adjective = input(red("Choose an adjective to call your crewmates. "))
+  adverb = input(red("Choose an adverb on how you want your crewmates to finish a task."))
+
+  print("\nShiver me timbers! Cap'n "+ green(pirate_name) +" land ahoy North East of our current waters!\nAye I can see the X from here.\nListen here you scallywags all hands on deck!\nWe set sail our ole "+ green(ship_name) +" on her course to that island!\nYou hear me?!\nAye Cap'n!\nAlright you "+ green(adjective) +" landlubbers the "+ green(treasure) +" is/are somewhere on this beach so start digging "+ green(adverb) +"!\nCap'n we dug up something over here!\nAh finally after all this time I found it.\nRejoice me hearties we have found the "+ green(treasure) +" were going to be rich!\nStart loading up ole "+ green(ship_name) +" with our booty and let us celebrate on our glorious treasure hunt with a feast fit for a pirate!")
+
+pirate_story()
