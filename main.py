@@ -7,7 +7,7 @@ mad_libs = text2art("Mad Libs")
 print(mad_libs)      
 
 print("Hello user elcome to Bryce and Joseph's custom Mad Lib!")
-input("Press Enter to")
+input("Press Enter to start")
 nouns = ("Nouns")
 verbs = ("Verbs")
 adjectives = ("Adjectives")
@@ -37,8 +37,6 @@ input("\nPress Enter to continue to the story making process!")
 
 
 
-
-
 def minecraft_story() -> str:
   print(cyan("\nBuilding my House in Minecraft "))
   username=input("\nWhat is your Username in Minecraft? ")
@@ -55,7 +53,7 @@ def minecraft_story() -> str:
   print("I am so proud of myself for building this house.") 
 
 
-minecraft_story()
+
 
 
 def pirate_story() -> str:
@@ -68,4 +66,19 @@ def pirate_story() -> str:
 
   print("\nShiver me timbers! Cap'n "+ green(pirate_name) +" land ahoy North East of our current waters!\nAye I can see the X from here.\nListen here you scallywags all hands on deck!\nWe set sail our ole "+ green(ship_name) +" on her course to that island!\nYou hear me?!\nAye Cap'n!\nAlright you "+ green(adjective) +" landlubbers the "+ green(treasure) +" is/are somewhere on this beach so start digging "+ green(adverb) +"!\nCap'n we dug up something over here!\nAh finally after all this time I found it.\nRejoice me hearties we have found the "+ green(treasure) +" were going to be rich!\nStart loading up ole "+ green(ship_name) +" with our booty and let us celebrate on our glorious treasure hunt with a feast fit for a pirate!")
 
-pirate_story()
+def random_story()-> list:
+  story = [minecraft_story, pirate_story]
+  chosen_story =random.choice(story)
+  chosen_story()
+random_story()
+
+
+while True:
+    a = input("Do you want to play again yes/no? ")
+    if a=="yes":
+      random_story()
+    elif a=="no":
+      print("Thank you for playing!!")
+      break
+    else:
+      print("Enter either yes/no")
