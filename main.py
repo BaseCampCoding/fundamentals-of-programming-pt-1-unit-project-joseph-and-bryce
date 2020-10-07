@@ -57,12 +57,6 @@ def minecraft_story() -> str:
 minecraft_story()
 
 
-
-
-
-
-
-
 def pirate_story() -> str:
   print(yellow("\nTreasue Hunt\n "))
   pirate_name = input(red("What is your Captain's name? "))
