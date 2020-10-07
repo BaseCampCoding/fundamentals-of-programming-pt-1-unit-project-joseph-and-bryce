@@ -1,15 +1,21 @@
 import simple_colors
 from simple_colors import *
-
+import art
+from art import *
+mad_libs = text2art("Mad Libs")
+print(mad_libs)      
 
 print("Hello user elcome to Bryce and Joseph's custom Mad Lib!")
+input("Press Enter to")
 nouns = ("Nouns")
-
+verbs = ("Verbs")
+adjectives = ("Adjectives")
+adverbs = ("Adverbs")
 print("\nHere some defintions of Nouns, Verbs, Adverbs, and Adjectives in case you need a friendly reminder:")
-print("\n"+ nouns +"- a noun is the name of a person, place, or thing.")
-print("\nVerbs - are an action word such as run, jump, and swim.")
-print("\nAdjectives - describe a person, place, or thing. Some examples are short, tall, happy, soft, and smooth.")
-print("\nAdverbs - describe in what way someone does something. For example someone could be running quickly, slowly, or carefully.")
+print("\n"+ magenta(nouns) +"- a noun is the name of a person, place, or thing.")
+print("\n"+ magenta(verbs) +"- are an action word such as run, jump, and swim.")
+print("\n"+ magenta(adjectives) +" - describe a person, place, or thing. Some examples are short, tall, happy, soft, and smooth.")
+print("\n"+ magenta(adverbs) +"- describe in what way someone does something. For example someone could be running quickly, slowly, or carefully.")
 
 input("\nPress Enter to continue to the instructions.")
 
