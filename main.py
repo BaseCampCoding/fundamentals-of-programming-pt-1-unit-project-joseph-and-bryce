@@ -1,4 +1,6 @@
+import simple_colors
 from simple_colors import *
+
 
 print("Hello user elcome to Bryce and Joseph's custom Mad Lib!")
 nouns = ("Nouns")
@@ -31,11 +33,19 @@ input("\nPress Enter to continue to the story making process!")
 
 
 def minecraft_story() -> str:
-  print(yellow("\nBuilding my House in Minecraft\n "))
-  username=input(red("\nWhat is your Username in Minecraft? "))
-  biome =input(red("\nWhat is your favorite biome in Minecraft? "))
-  block =input(red("\nWhat block would you like to build your house with? "))
+  print(cyan("\nBuilding my House in Minecraft "))
+  username=input("\nWhat is your Username in Minecraft? ")
+  biome =input("\nWhat is your favorite biome in Minecraft? ")
+  block =input("\nWhat block would you like to build your house with? ")
 
-  print("\nMy username is "+ green(username) +" I started my first day on minecraft today.\nMy goal is to build a nice house in the "+ green(biome)+".\nFirst things first I need to gather "+ green(block)+" to build my new house with.\nNice! I now have all I need.\nTime to go search for a/an "+ green(biome)+" to build my new house in.\nYes! I found it a/an "+ green(biome)+" I can finally build my dream house time to start building!\nIt's done my minecraft house made of "+ green(block)+" is built!\nI am so proud of myself for building this house.")   
+  print("\nMy username is "+ green(username) +" I started my first day on minecraft today.")
+  print("My goal is to build a nice house in the "+ green(biome)+".")
+  print("First things first I need to gather "+ green(block)+" to build my new house with.")
+  print("Nice! I now have all I need.")
+  print("Time to go search for a/an "+ green(biome)+" to build my new house in.")
+  print("Yes! I found it a/an "+ green(biome)+" I can finally build my dream house time to start building!")
+  print("It's done my minecraft house made of "+ green(block)+" is built!")
+  print("I am so proud of myself for building this house.") 
+
 
 minecraft_story()
