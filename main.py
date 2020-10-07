@@ -39,7 +39,7 @@ def minecraft_story() -> str:
   print("First things first I need to gather "+ green(block)+" to build my new house with.")
   print("Nice! I now have all I need.")
   print("Time to go search for a/an "+ green(biome)+" to build my new house in.")
-  print("Yes! I found it a/an "+ green(biome)+" I can finally build my dream house time to start building "+ green(adverb) +" before it turns night. ")
+  print("Yes! I found it a/an "+ green(biome)+" I can finally build my dream house time to start building before it turns night. ")
   print("It's done my minecraft house made of "+ green(block)+" is built!")
   print("I am so proud of myself for building this house.") 
 
@@ -51,7 +51,7 @@ def pirate_story() -> str:
   ship_name = input(blue("What is the name of your ship? "))
   treasure = input(blue("What is the treasure you are seeking? "))
   adjective = input(blue("Choose an adjective to call your crewmates. "))
-  adverb = input(blue("Choose an adverb on how you want your crewmates to finish a task."))
+  adverb = input(blue("Choose an adverb on how you want your crewmates to finish a task. "))
 
   print("\nShiver me timbers! Cap'n "+ green(pirate_name) +" land ahoy North East of our current waters!")
   print("Aye I can see the X from here.")
