@@ -30,7 +30,10 @@ input("\nPress Enter to continue to the story making process!")
 
 
 
-
+def elevator_story():
+  print("\nWelcome to the Elevator")
+  floor=input("\nWhat is the floor that you need to get off? ")
+  action = input("\nWhat would you do if you see the wo ")
 
 
 
