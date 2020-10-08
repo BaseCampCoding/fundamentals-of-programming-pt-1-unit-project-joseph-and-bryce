@@ -33,7 +33,11 @@ input("\nPress Enter to continue to the story making process!")
 def elevator_story():
   print("\nWelcome to the Elevator")
   floor=input("\nWhat is the floor that you need to get off? ")
-  action = input("\nWhat would you do if you see the wo ")
+  fear = input("\nWhat is your worst fear?")
+  action = input("\nWhat action would you do if you see your worst fear? ")
+  place =input("\nWhat is your favroite place to go? ")
+  
+
 
 
 
