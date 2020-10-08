@@ -182,7 +182,7 @@ def random_story() -> list:
   story = [minecraft_story, pirate_story, morning_story, elevator_story]
   chosen_story =random.choice(story)
   chosen_story()
-
+random_story()
 
 
 while True:
