@@ -6,7 +6,7 @@ from art import *
 mad_libs = text2art("Mad Libs")
 print(mad_libs)      
 
-print("Hello user elcome to Bryce and Joseph's custom Mad Lib!")
+print("Hello user welcome to Bryce and Joseph's custom Mad Lib!")
 input("Press Enter to start")
 nouns = ("Nouns")
 verbs = ("Verbs")
