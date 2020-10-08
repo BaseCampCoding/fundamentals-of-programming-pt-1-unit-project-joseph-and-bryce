@@ -44,8 +44,8 @@ def elevator_story():
     name.append(response)
   friend = random.choice(name)
   
-  music = input(cyan("\nFavorite music? "))
-  animal = input(cyan("\nWhat is your terrifying animal? "))
+  music = input("\nFavorite music? ")
+  animal = input("\nWhat is your terrifying animal? ")
   print(magenta("\nWelcome to the Elevator"))
   while True:
     floor = int(input("What floor would like to go? "))
