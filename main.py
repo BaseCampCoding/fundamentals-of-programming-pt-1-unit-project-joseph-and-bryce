@@ -31,22 +31,22 @@ input("\nPress Enter to continue to the story making process!")
 
 
 def elevator_story():
-  print("\nWelcome to the Elevator")
-  your_floor = int(input("\nWhat is the floor that you need to get off? "))
-  fear = input("\nWhat is your worst fear? ")
-  action = input("\nWhat action would you do if you see your worst fear? ")
-  place =input("\nWhat is your favorite place to go? ")
+  print(magenta("\nWelcome to the Elevator"))
+  your_floor = int(input(cyan("\nWhat is the floor that you need to get off? "))
+  fear = input(cyan("\nWhat is your worst fear? "))
+  action = input(cyan("\nWhat action would you do if you see your worst fear? "))
+  place =input(cyan("\nWhat is your favorite place to go? "))
   name = []
   while True:
-    response = input("\nName your friends?(q to quit): ")
+    response = input(cyan("\nName your friends?(q to quit): ")_
     if response == 'q':
       break
     name.append(response)
   friend = random.choice(name)
   
-  music = input("\nFavorite music? ")
-  animal = input("\nWhat is your terrifying animal? ")
-  print("\nWelcome to the Elevator")
+  music = input(cyan("\nFavorite music? "))
+  animal = input(cyan("\nWhat is your terrifying animal? "))
+  print(magenta("\nWelcome to the Elevator"))
   while True:
     floor = int(input("What floor would like to go? "))
     if floor == your_floor:
@@ -179,7 +179,7 @@ morning_story()
 
 
 def random_story() -> list:
-  story = [minecraft_story, pirate_story]
+  story = [minecraft_story, pirate_story, morning_story, elevator_story]
   chosen_story =random.choice(story)
   chosen_story()
 
