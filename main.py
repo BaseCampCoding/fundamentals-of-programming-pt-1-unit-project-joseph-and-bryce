@@ -186,11 +186,11 @@ random_story()
 
 
 while True:
-    a = input("\nDo you want to play again yes/no? ")
-    if a=="yes":
+    a = input("\nDo you want to play again Y/N? ")
+    if a=="Y":
       random_story()
-    elif a=="no":
+    elif a=="N":
       print("Thank you for playing!!")
       break
     else:
-      print("Enter either yes/no")
+      print("Enter either Y/N")
