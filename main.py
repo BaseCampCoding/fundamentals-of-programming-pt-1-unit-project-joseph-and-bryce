@@ -32,11 +32,47 @@ input("\nPress Enter to continue to the story making process!")
 
 def elevator_story():
   print("\nWelcome to the Elevator")
-  floor=input("\nWhat is the floor that you need to get off? ")
-  fear = input("\nWhat is your worst fear?")
+  your_floor = int(input("\nWhat is the floor that you need to get off? "))
+  fear = input("\nWhat is your worst fear? ")
   action = input("\nWhat action would you do if you see your worst fear? ")
-  place =input("\nWhat is your favroite place to go? ")
+  place =input("\nWhat is your favorite place to go? ")
+  name = []
+  while True:
+    response = input("\nName your friends?(q to quit): ")
+    if response == 'q':
+      break
+    name.append(response)
+  friend = random.choice(name)
   
+  music = input("\nFavorite music? ")
+  animal = input("\nWhat is your terrifying animal? ")
+  print("\nWelcome to the Elevator")
+  while True:
+    floor = int(input("What floor would like to go? "))
+    if floor == your_floor:
+      print("YAA you made it to your floor!!")
+      break
+    elif floor == 1:
+      print("\nYou didn't go anywhere\n")
+    elif floor == 2:
+      print("\nThis floor is having a party and they are playing "+ green(music)+".")
+      print("You see one of your friends "+green(friend)+" partying crazy.")
+      print("You went back to the elevator becasue you felt confused.\n" )
+    elif floor == 3:
+      print("\nThis floor is a forest floor and you see your worst fear.")
+      print("It's a/an "+ green(fear) +" the first thing you do was to "+ green(action)+".")
+      print("Then you ran back to the elevator\n")
+    elif floor == 4:
+      print("\nThis floor has your favorite place which is/is the "+ green(place)+"\nand you see one of you see "+ green(friend)+" just chillen.")
+      print("He sees you and said 'Hey hows it going.'.")
+      print("You went back to elevator because you don't understand whats going on?\n")
+    elif floor == 5:
+      print("\nThis floor is like a jungle and you see "+ green(friend)+" running from "+green(animal)+".")
+      print("You quickly shut the elevator door.\n")
+
+    else:
+      print("That Number doesn't exist.")
+
 
 
 
@@ -86,11 +122,11 @@ def random_story()-> list:
   story = [minecraft_story, pirate_story]
   chosen_story =random.choice(story)
   chosen_story()
-random_story()
+
 
 
 while True:
-    a = input("Do you want to play again yes/no? ")
+    a = input("\nDo you want to play again yes/no? ")
     if a=="yes":
       random_story()
     elif a=="no":
