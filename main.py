@@ -173,7 +173,7 @@ def morning_story() -> str:
             elif choice == "no":
                 print("You decide to skip going to the bathroom and pop a mint instead and head out for the day. ")
 
-morning_story()
+
 
 
 
