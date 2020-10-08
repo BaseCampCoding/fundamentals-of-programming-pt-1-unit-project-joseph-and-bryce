@@ -32,13 +32,13 @@ input("\nPress Enter to continue to the story making process!")
 
 def elevator_story():
   print(magenta("\nWelcome to the Elevator"))
-  your_floor = int(input(cyan("\nWhat is the floor that you need to get off? "))
-  fear = input(cyan("\nWhat is your worst fear? "))
-  action = input(cyan("\nWhat action would you do if you see your worst fear? "))
-  place =input(cyan("\nWhat is your favorite place to go? "))
+  your_floor = int(input("\nWhat is the floor that you need to get off? "))
+  fear = input("\nWhat is your worst fear? ")
+  action = input(("\nWhat action would you do if you see your worst fear? "))
+  place =input("\nWhat is your favorite place to go? ")
   name = []
   while True:
-    response = input(cyan("\nName your friends?(q to quit): ")_
+    response = input("\nName your friends?(q to quit): ")
     if response == 'q':
       break
     name.append(response)
