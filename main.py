@@ -63,7 +63,7 @@ def minecraft_story() -> str:
 
 
 def pirate_story() -> str:
-  print(cyan("\nTreasue Hunt\n "))
+  print(cyan("\nTreasue Hunt "))
   pirate_name = input(blue("What is your Captain's name? "))
   ship_name = input(blue("What is the name of your ship? "))
   treasure = input(blue("What is the treasure you are seeking? "))
@@ -82,7 +82,67 @@ def pirate_story() -> str:
   print("Rejoice me hearties we have found the "+ green(treasure) +" were going to be rich!")
   print("Start loading up ole "+ green(ship_name) +" with our booty and let us celebrate on our glorious treasure hunt with a feast fit for a pirate!")
 
-def random_story()-> list:
+
+def morning_story() -> str:
+    print("\nMorning Routine ")
+    choice = input("You wake up to the sound of your alarm clock going off where do you go first the bathroom, kitchen, or stay in the bedroom? ")
+    if choice == "bedroom":
+        print("You decide to change your clothes first in your room before doing anything else. ")
+        choice = input("Where do you go now the kitchen or the bathroom? ")
+        if choice == "kitchen":
+            print("You then head to the kitchen to make some breakfeast and open the fridge to find some eggs and bacon and have a delicious breakfeast. ")
+            choice = input("Now that you changed your clothes and had breakfeast do you go to the bathroom yes or no? ")
+            if choice == "yes":
+                print("You go to the bathroom to brush your teeth and head out of the house for the day. ")
+            elif choice == "no":
+                print("You decide to stay home instead of heading out looking fresh.")
+        elif choice == "bathroom":
+            print("You decide to go brush your teeth and tidy up. ")
+            choice = input("Now that you have changed your clothes and brushed your teeth do you go eat breakfeast yes or no?")
+            if choice == "no":
+                print("You head into the kitchen and eat a delicious breakfeast and head out of your home for the day. ")
+            elif choice == "yes":
+                print("You decide to skip breakfeast because you don't feel hungry.")
+    elif choice == "kitchen":
+        print("You decide to go make some breakfeast first. ")
+        choice = input("Now that you have had a delicious breakfeast where do you go now the bedroom or the bathroom. ")
+        if choice == "bedroom":
+            print("You make your way to your bedroom to fetch a fresh pair of clothes to change with. ")
+            choice = input("Now that you have changed your clothes and ate some breakfeast do you head to the bathroom yes or no? ")
+            if choice == "yes":
+                print("You brush your teeth and head out of the house for the day. ")
+            elif choice == "no":
+                print("You decide to skip brushing your teeth this morning and still head out for the day. ")
+        if choice == "bathroom":
+            print("You make your way to the bathroom to brush your teeth. ")
+            choice = input("After you brush your teeth and eat some breakfeast do you head to your room to change clothes yes or no? ")
+            if choice == "yes":
+                print("You make your way to your room and put on a fresh pair of clothes to start out the day. ")
+            elif choice == "no":
+                print("You decide to wear the clothes you are currently wearing due to them not smelling too bad. ")
+    elif choice == "bathroom":
+        print("You decide to go use the bathroom first and brush your teeth. ")
+        choice = input("After you brush your teeth where do you go next the kitchen or your bedroom? ")
+        if choice == "kitchen":
+            print("You head towards the kitchen and make a balanced breakfeast of eggs and bacon. ")
+            choice = input("After you brush your teeth and eat some breakfeast do you go to your room to change clothes yes or no? ")
+            if choice == "yes":
+                print("You decide to change clothes due to them smelling pretty bad and head out of the house for the day. ")
+            elif choice == "no":
+                print("You decide not to change your clothes or even leave the house that day. ")
+        if choice == "bedroom":
+            print("You change your clothes in your room do you go to the bathroom next yes or no? ")
+            if choice == "yes":
+                print("You use the bathroom to brush your teeth and get cleaned up for the day. ")
+            elif choice == "no":
+                print("You decide to skip going to the bathroom and pop a mint instead and head out for the day. ")
+
+morning_story()
+
+
+
+
+def random_story() -> list:
   story = [minecraft_story, pirate_story]
   chosen_story =random.choice(story)
   chosen_story()
