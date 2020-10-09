@@ -3,7 +3,7 @@ import simple_colors
 from simple_colors import *
 import art
 from art import *
-mad_libs = text2art("Mad Libs")
+mad_libs = text2art("Random\nMad Libs")
 print(mad_libs)      
 
 print("Hello user welcome to Bryce and Joseph's custom Mad Lib!")
